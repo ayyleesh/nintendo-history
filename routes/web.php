@@ -1,5 +1,6 @@
 <?php
 
+use App\Product;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,3 +13,5 @@
 */
 
 Route::get('/', 'IndexController@index')->name('index.index');
+
+Route::get('/{product}', 'ProductController@show')->name('product.show');

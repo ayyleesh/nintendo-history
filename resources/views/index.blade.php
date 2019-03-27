@@ -21,7 +21,7 @@ Home
 @endsection
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <ul class="timeline">
       @foreach($products as $product)
         <li class={{$product->id%2 ? "timeline-left" : "timeline-right" }}>
@@ -37,7 +37,7 @@ Home
               <p>{{$product->description}}</p>
               <hr>
               <div class="text-right">
-                <button class="btn btn-outline-grey" type="button">read more...</button>
+                <a class="btn btn-sm btn-outline-grey" href="{{route('product.show', $product->slug)}}">read more...</a>
               </div>
             </div>
           </div>

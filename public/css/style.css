@@ -9,6 +9,10 @@ header,
     height: 100%;
 }
 
+.top-nav-collapse {
+    background-color: #ff3547;
+}
+
 .bg-img{
   background-size:cover;
   height: 250px !important;
@@ -16,4 +20,14 @@ header,
 
 .productbanner{
   background: url("https://placehold.it/2000x1000");
+}
+
+.inline-flex-center{
+  display: inline-flex !important;
+}
+
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
 }

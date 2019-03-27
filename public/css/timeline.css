@@ -122,3 +122,7 @@ padding-left:90px;
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+.timeline li:not(:first-child) {
+    margin-top: 50px !important;
+}

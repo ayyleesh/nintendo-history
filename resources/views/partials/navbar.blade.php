@@ -1,4 +1,4 @@
-<nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark danger-color">
+<nav class="mb-1 navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="{{ url('/') }}">
       [WebName]
@@ -14,9 +14,6 @@
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">Products</a>
           <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-            @foreach($products as $product)
-            <a class="dropdown-item" href="#">{{$product->name}}</a>
-            @endforeach
           </div>
         </li>
       </ul>
